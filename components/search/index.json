@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "o-tag":"/components/tag/index",
+    "o-book":"/components/book/index"
+  }
+}

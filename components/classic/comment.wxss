@@ -1,0 +1,25 @@
+
+.movie-view{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgStyle{
+  width: 100%;
+  height: 500rpx;
+}
+
+.iconStyle{
+  width: 46rpx;
+  height: 142rpx;
+  position: relative;
+  right: 310rpx;
+  bottom: 60rpx;
+}
+
+.contentStyle{
+  font-size: 36rpx;
+  max-width: 550rpx;
+  text-align: center
+}

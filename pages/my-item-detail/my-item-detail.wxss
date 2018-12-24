@@ -1,0 +1,3 @@
+/* pages/my-item-detail/my-item-detail.wxss */
+@import "../classic/classic.wxss";
+

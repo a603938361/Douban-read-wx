@@ -1,0 +1,10 @@
+<view class='container'>
+  <view class='header'>
+    <o-epsolider class='o-epsolider' index="{{classic.index}}" />
+    <o-like class='o-like' bindfunc="clickLike" like="{{classic.like_status}}" count="{{classic.fav_nums}}" />
+  </view>
+  <o-movie class='o-movie' hidden="{{classic.type!=100}}" img="{{classic.image}}" content="{{classic.content}}" />
+  <o-music class='o-movie' wx:if="{{classic.type==200}}" img="{{classic.image}}" content="{{classic.content}}" src="{{classic.url}}" title="{{classic.title}}"/>
+  <o-essay class='o-movie' hidden="{{classic.type!=300}}" img="{{classic.image}}" content="{{classic.content}}" />
+  <o-nav bindleft="onNext" bindright="onPrivice" class='o-nav' title="{{classic.title}}" first="{{first}}" laster="{{laster}}" />
+</view>

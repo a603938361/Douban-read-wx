@@ -1,0 +1,7 @@
+<view class='header'>
+  <o-epsolider class='o-epsolider' index="{{mainData.index}}" />
+  <o-like class='o-like' bindfunc="clickLike" like="{{mainData.like_status}}" count="{{mainData.fav_nums}}" />
+</view>
+<o-movie wx:if="{{mainData.type == 100}}" img="{{mainData.image}}" content="{{mainData.content}}" />
+<o-music wx:if="{{mainData.type == 200}}" img="{{mainData.image}}" content="{{mainData.content}}" src="{{mainData.url}}" title="{{mainData.title}}" />
+<o-essay wx:if="{{mainData.type == 300}}" img="{{mainData.image}}" content="{{mainData.content}}" />

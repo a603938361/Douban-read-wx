@@ -1,0 +1,49 @@
+<view class='container'>
+    <view class='header'>
+        <view class='search-container'>
+            <image src='./images/search.png'></image>
+            <input value="{{searchKey}}" class='bar' placeholder='书籍名称' placeholder-class='in-bar' auto-focus='true' bindconfirm='confirm'></input>
+            <image src='./images/cancel.png' bindtap='onClearnText'></image>
+        </view>
+        <view class='cancel' bindtap='onCancel'>取消</view>
+    </view>
+
+    <view wx:if="{{searchDataView}}">
+        <view wx:if="{{showNoData}}" class="no-book-container">
+            <text>暂无相关书籍</text>
+        </view>
+        <view wx:else class="books-container">
+            <block wx:for="{{searchResultsBook}}">
+                <o-book book="{{item}}" showLike="{{false}}"/>
+            </block>
+        </view>
+    </view>
+
+    <view class='keyword-container' wx:if="{{!searchDataView}}">
+        <view class='hostory'>
+            <view class='title'>
+                <view class='chunk'></view>
+                <text>历史搜索</text>
+            </view>
+
+            <view class='tag'>
+                <block wx:for="{{historyWords}}" wx:for-item="item" wx:key="idx">
+                    <o-tag bindtag="tagClick" text="{{item}}" />
+                </block>
+            </view>
+        </view>
+
+        <view class='hostory hot-search'>
+            <view class='title'>
+                <view class='chunk'></view>
+                <text>热门搜索</text>
+            </view>
+            <view class='tag'>
+                <block wx:for="{{hotWords}}" wx:for-item="item" wx:key="idx">
+                    <o-tag bindtag="tagClick" text="{{item}}" />
+                </block>
+            </view>
+        </view>
+    </view>
+
+</view>

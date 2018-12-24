@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "o-book": "/components/book/index",
+    "o-search": "/components/search/index"
+  }
+}

@@ -1,0 +1,15 @@
+var changeType = function(num){
+  if(num == 100){
+    return "电影"
+  } else if (num == 200) {
+    return "音乐"
+  } else if (num == 300) {
+    return "句子"
+  } else{
+    return '';
+  }
+}
+
+module.exports = {
+  changeType: changeType
+}

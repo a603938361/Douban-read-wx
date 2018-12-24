@@ -1,0 +1,12 @@
+<!--components/like/index.wxml-->
+
+<view class='container' bindtap='onLike'>
+
+    <!-- if else 处理 -->
+    <!-- <image wx:if="{{isLike}}" src='images/like.png' />
+    <image wx:else src='images/like@dis.png' /> -->
+    <!-- <text>{{ isLike ? 90 : 23}}</text> -->
+
+    <image src="{{like ? likeImg : noLikeImg}}" />
+    <text>{{count}}</text>
+</view>

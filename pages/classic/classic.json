@@ -1,0 +1,10 @@
+{
+    "usingComponents":{
+        "o-like": "/components/like/index",
+        "o-movie": "/components/classic/movie/index",
+        "o-epsolider": "/components/epsolider/epsolider",
+        "o-nav": "/components/nav/index",
+        "o-music": "/components/classic/music/index",
+        "o-essay": "/components/classic/essay/index"
+      }
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "o-my-item": "/components/my-item/index",
+    "o-image-button": "/components/image-button/index"
+  }
+}

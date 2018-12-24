@@ -1,0 +1,4 @@
+<button open-type="{{openType}}" bindgetuserinfo="imageBtnClick" plain="{{true}}" class='button'>
+  <slot name="image"></slot>
+  <slot name="temp"></slot>
+</button>

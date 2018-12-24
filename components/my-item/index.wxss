@@ -1,0 +1,46 @@
+/* components/my-item/index.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 300rpx;
+  background-color: white;
+  align-items: center
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  width: 100%
+}
+
+.item-type {
+  background-color: rgb(245, 243, 243);
+  margin-left: 10rpx;
+}
+
+.item-type text {
+  font-size: 25rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.content-image {
+  width: 100%;
+  height: 250rpx;
+}
+
+.content-music{
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 50%
+}
+
+.text {
+  font-size: 25rpx;
+  margin: 20rpx;
+  height: 65rpx;
+}

@@ -1,0 +1,47 @@
+<view class="container">
+
+  <!-- <o-image-button class='image-button' open-type="getUserInfo">
+      <image slot="image" src="/images/my/my.png"></image>
+    </o-image-button> -->
+
+
+  <view class="header">
+    <image class='header-bg-img' src="/images/my/my@bg.png"></image>
+
+    <view wx:if="{{!login}}">
+      <o-image-button open-type="getUserInfo" class="icon" bindbuttonClick="onGetUserInfo">
+        <image slot="image" class="avatar" src="/images/my/my.png" />
+      </o-image-button>
+    </view>
+
+    <view class="icon" wx:if="{{login}}">
+      <image src="{{userInfo.avatarUrl}}"></image>
+      <text>{{userInfo.nickName}}</text>
+    </view>
+
+    <view class="header-bottom">
+      <view class="sub-view">
+        <image src="/images/my/about.png"></image>
+        <view class='text1'>
+          <text>关于我们</text>
+        </view>
+      </view>
+      <view class="sub-view">
+        <text>100</text>
+        <view class='text1'>
+          <text>喜欢的书</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="like-container">
+    <image src='/images/my/like.png' class="like-img"></image>
+    <view class="bottom-container">
+      <block wx:for="{{favorDatas}}">
+        <o-my-item binditemClick="itemClick" data="{{item}}" class="item" />
+      </block>
+    </view>
+  </view>
+
+</view>

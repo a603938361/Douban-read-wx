@@ -1,0 +1,12 @@
+<wxs src='my.wxs' module="tool" />
+<view class="container" bindtap="itemClick">
+  <view class="header">
+    <view class="item-type">
+      <text>{{tool.changeType(data.type)}}</text>
+    </view>
+    <o-like like="{{data.like_status}}" count="{{data.fav_nums}}" read-only="{{true}}"/>
+  </view>
+
+  <image src="{{data.image}}" class="{{data.type == 200 ? 'content-music' : 'content-image'}}"></image>
+  <text class="text">{{data.content}}</text>
+</view>
